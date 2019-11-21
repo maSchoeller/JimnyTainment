@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
-    <ProjectGuid>{BF3C4C7A-3BAC-4B1F-BF5D-DCE9253FC1FA}</ProjectGuid>
+    <ProjectGuid>{0B7795A6-FB16-4A1C-B91D-E00C4A0983B5}</ProjectGuid>
     <OutputType>AppContainerExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>JimnyTainment.UWP</RootNamespace>
-    <AssemblyName>JimnyTainment.UWP</AssemblyName>
+    <RootNamespace>JimnyTainment.UI.View</RootNamespace>
+    <AssemblyName>JimnyTainment.UI.View</AssemblyName>
     <DefaultLanguage>en-US</DefaultLanguage>
     <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
     <TargetPlatformVersion Condition=" '$(TargetPlatformVersion)' == '' ">10.0.18362.0</TargetPlatformVersion>
