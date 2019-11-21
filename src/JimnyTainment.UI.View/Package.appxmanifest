@@ -7,14 +7,14 @@
   IgnorableNamespaces="uap mp">
 
   <Identity
-    Name="5cf8109e-3f4b-479f-b60d-491a58e1d280"
+    Name="8a7a9b68-6916-47b2-bd28-a9fabf370b36"
     Publisher="CN=micro"
     Version="1.0.0.0" />
 
-  <mp:PhoneIdentity PhoneProductId="5cf8109e-3f4b-479f-b60d-491a58e1d280" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
+  <mp:PhoneIdentity PhoneProductId="8a7a9b68-6916-47b2-bd28-a9fabf370b36" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
 
   <Properties>
-    <DisplayName>JimnyTainment.UWP</DisplayName>
+    <DisplayName>JimnyTainment.UI.View</DisplayName>
     <PublisherDisplayName>micro</PublisherDisplayName>
     <Logo>Assets\StoreLogo.png</Logo>
   </Properties>
@@ -30,12 +30,12 @@
   <Applications>
     <Application Id="App"
       Executable="$targetnametoken$.exe"
-      EntryPoint="JimnyTainment.UWP.App">
+      EntryPoint="JimnyTainment.UI.View.App">
       <uap:VisualElements
-        DisplayName="JimnyTainment.UWP"
+        DisplayName="JimnyTainment.UI.View"
         Square150x150Logo="Assets\Square150x150Logo.png"
         Square44x44Logo="Assets\Square44x44Logo.png"
-        Description="JimnyTainment.UWP"
+        Description="JimnyTainment.UI.View"
         BackgroundColor="transparent">
         <uap:DefaultTile Wide310x150Logo="Assets\Wide310x150Logo.png"/>
         <uap:SplashScreen Image="Assets\SplashScreen.png" />
