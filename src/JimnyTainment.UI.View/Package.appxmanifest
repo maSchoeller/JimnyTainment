@@ -4,18 +4,21 @@
   xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10"
   xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest"
   xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10"
-  IgnorableNamespaces="uap mp">
+  xmlns:uap4="http://schemas.microsoft.com/appx/manifest/uap/windows10/4"
+  xmlns:uap3="http://schemas.microsoft.com/appx/manifest/uap/windows10/3"
+  xmlns:iot="http://schemas.microsoft.com/appx/manifest/iot/windows10"
+  IgnorableNamespaces="uap mp uap4 uap3 iot">
 
   <Identity
     Name="8a7a9b68-6916-47b2-bd28-a9fabf370b36"
-    Publisher="CN=micro"
-    Version="1.0.0.0" />
+    Publisher="CN=Marvin Schoeller"
+    Version="0.1.0.0" />
 
   <mp:PhoneIdentity PhoneProductId="8a7a9b68-6916-47b2-bd28-a9fabf370b36" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
 
   <Properties>
-    <DisplayName>JimnyTainment.UI.View</DisplayName>
-    <PublisherDisplayName>micro</PublisherDisplayName>
+    <DisplayName>Jimny Tainment</DisplayName>
+    <PublisherDisplayName>Paul Finkbeiner, Mario Lang, Marvin Schoeller</PublisherDisplayName>
     <Logo>Assets\StoreLogo.png</Logo>
   </Properties>
 
@@ -32,18 +35,30 @@
       Executable="$targetnametoken$.exe"
       EntryPoint="JimnyTainment.UI.View.App">
       <uap:VisualElements
-        DisplayName="JimnyTainment.UI.View"
+        DisplayName="Jimny Tainment"
         Square150x150Logo="Assets\Square150x150Logo.png"
         Square44x44Logo="Assets\Square44x44Logo.png"
-        Description="JimnyTainment.UI.View"
-        BackgroundColor="transparent">
+        BackgroundColor="transparent" Description="Car Control">
         <uap:DefaultTile Wide310x150Logo="Assets\Wide310x150Logo.png"/>
         <uap:SplashScreen Image="Assets\SplashScreen.png" />
+        <uap:InitialRotationPreference>
+          <uap:Rotation Preference="landscape"/></uap:InitialRotationPreference>
       </uap:VisualElements>
     </Application>
   </Applications>
 
   <Capabilities>
     <Capability Name="internetClient" />
+    <uap:Capability Name="videosLibrary"/>
+    <uap:Capability Name="picturesLibrary"/>
+    <uap:Capability Name="phoneCall"/>
+    <uap4:Capability Name="offlineMapsManagement"/>
+    <uap3:Capability Name="backgroundMediaPlayback"/>
+    <iot:Capability Name="lowLevelDevices"/>
+    <uap:Capability Name="musicLibrary"/>
+    <DeviceCapability Name="bluetooth"/>
+    <DeviceCapability Name="lowLevel"/>
+    <DeviceCapability Name="microphone"/>
+    <DeviceCapability Name="location"/>
   </Capabilities>
 </Package>
